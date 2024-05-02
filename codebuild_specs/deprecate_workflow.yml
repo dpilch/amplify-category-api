@@ -1,0 +1,10 @@
+version: 0.2
+env:
+  shell: bash
+  compute-type: BUILD_GENERAL1_SMALL
+
+batch:
+  fast-fail: false
+  build-graph:
+    - identifier: deploy
+      buildspec: codebuild_specs/deprecate.yml
